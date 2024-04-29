@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6; 
+    background: #feffff;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; 
+    color: #ffffff; 
+    background-color: #0a68cc;
+    padding: 10px; 
+    margin: 20px 0;
+    text-align: left;
+}
+
+header {
+    background-color: #003273;
+    color: white;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0 0 0 10px;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: rgb(18, 11, 224);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #dedede;
+    color: #333;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.main {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.description, .news, .highlights, .call-to-action {
+    margin: 20px 0;
+    padding: 20px;
+    background: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+footer {
+    background-color: #003273;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px; 
+}
+
+footer a {
+    color: #d7bc23;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 250px; 
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+    transition: transform 0.5s ease;
+}
+
+.banner .banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.5s ease;
+}
+
+.banner:hover img {
+    transform: scale(1.1); 
+}
+
+.banner:hover .banner-text {
+    transform: translate(-50%, -50%) scale(1.1); 
+}
+
+.faculty-section {
+    background-color: #f2f2f2; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.faculty-member {
+    margin-bottom: 20px; 
+}
+
+.faculty-member img {
+    width: 100px; 
+    height: auto;
+    border-radius: 50%; 
+}
+
+.faculty-member h3 {
+    margin-top: 10px;
+}
+
+.faculty-member p {
+    margin-bottom: 5px;
+}
+
+.faculty-member a {
+    color: #007bff; 
+    text-decoration: none;
+}
+
+body, h1, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003273;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #003273;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section.resources {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section.resources h2 {
+    color: #f3f3f3;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    background-color: #e9e9e9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li a {
+    color: #003273;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #003273;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+.faculty-profile {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.faculty-image-container {
+    flex: 0 0 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.faculty-image-container img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.faculty-details {
+    flex: 1;
+    padding: 20px;
+}
+
+.faculty-details h1 {
+    color: #005792;
+    margin-bottom: 10px;
+}
+
+.faculty-details p, .faculty-details a {
+    margin-bottom: 5px;
+}
+
+.faculty-details a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.faculty-details a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header, nav ul, .main, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    .faculty-profile {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .faculty-image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header, nav ul, .main, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul li {
+        margin: 10px 0; 
+    }
+    
+    .main {
+        width: auto; 
+    }
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #0a68cc;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #005792; 
+    transform: scale(1.05); 
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+input.gradeInput {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px; 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input, select, textarea {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
